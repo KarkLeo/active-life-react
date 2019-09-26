@@ -1,0 +1,45 @@
+.Pagination {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.Pagination li {
+    margin: 0;
+    padding: 0;
+}
+
+.Pagination li button {
+    position: relative;
+
+    height: 2rem;
+    box-sizing: border-box;
+
+    font-weight: 700;
+    color: #fff;
+    font-size: .9rem;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.Pagination li button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% + .5rem);
+
+    display: block;
+    width: 1rem;
+    height: .1rem;
+
+    background-color: #fff;
+    border-radius: .05rem;
+    transform: translateY(-50%);
+    transition: all 150ms ease-in-out;
+}
+.Pagination li button:hover::after {
+    width: 2rem;
+}

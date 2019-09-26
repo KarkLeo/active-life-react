@@ -1,0 +1,8 @@
+.test {
+    width: calc(var(--column-width));
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}

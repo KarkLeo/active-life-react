@@ -1,0 +1,46 @@
+.MainMenu {
+    grid-column: 9 / 22;
+    grid-row: 3 / 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.MainMenu-List {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.MainMenu-Item {
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+
+.MainMenu-Link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.AdminButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 2rem;
+    padding: 0 1rem;
+
+    color: #444;
+    font-size: .7rem;
+    line-height: 1em;
+    text-decoration: none;
+    font-weight: 700;
+
+    background-color: #fff;
+    border-radius: .25rem;
+}

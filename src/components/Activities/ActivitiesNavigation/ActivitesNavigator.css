@@ -1,0 +1,38 @@
+.ActivitiesNavigator {
+    position: absolute;
+    top: 3rem;
+    left: calc((100% - var(--max-width)) / 2);
+    z-index: 10;
+}
+
+.ActivitiesNavigator-List {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.ActivitiesNavigator-Item {
+    margin-right: 3rem;
+}
+
+.ActivitiesNavigator-Button {
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.2rem;
+    line-height: 1em;
+    color: #ffffff;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ActivitiesNavigator-Button_active {
+    border-bottom: .1rem dashed #fff;
+}
+

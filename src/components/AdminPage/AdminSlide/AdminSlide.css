@@ -1,0 +1,153 @@
+.AdminSlide {
+    position: relative;
+}
+
+.AdminSlide label {
+    display: block;
+    margin: 0 0 1rem;
+}
+.AdminSlide label:last-child {
+    margin: 0;
+}
+
+.AdminSlide-Index {
+    margin: 0 0 1rem;
+
+    font-size: 1rem;
+    line-height: 1em;
+}
+
+.AdminSlide h4 {
+    margin: 0;
+    height: 2rem;
+
+    font-size: .8rem;
+    line-height: 2.5em;
+    font-weight: 400;
+    color: #909090
+}
+
+.AdminSlide-Input {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 400;
+
+    border: .05rem solid #909090;
+    background-color: transparent;
+    border-radius: .25rem;
+    outline: none;
+}
+.AdminSlide-Input:focus {
+    border: 1px solid #F4BA00;
+}
+
+.AdminSlide-Textarea {
+    display: block;
+    width: 100%;
+    height: 8rem;
+    padding: .5rem;
+    box-sizing: border-box;
+
+    font-size: .8rem;
+    line-height: 1.25em;
+    color: #fff;
+    font-weight: 400;
+
+    border: .05rem solid #909090;
+    background-color: transparent;
+    border-radius: .25rem;
+    outline: none;
+    resize: none;
+}
+.AdminSlide-Textarea:focus {
+    border: .05rem solid #F4BA00;
+}
+
+.AdminSlide-InputCase {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.AdminSlide-InputCase > * {
+    width: calc(50% - .5rem);
+}
+
+.AdminSlides-AddButton {
+    min-width: 20rem;
+    height: auto;
+    min-height: 5rem;
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+
+    border:  .1rem dashed #fff;
+    border-radius: .5rem;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.AdminSlides-AddButton:hover {
+    color: #F4BA00;
+
+    border: .1rem solid #F4BA00;
+}
+
+.AdminSlides-deleteButton {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: .05rem solid #F4BA00;
+    border-radius: 50%;
+    background-color: #F4BA00;
+    outline: none;
+    cursor: pointer;
+}
+
+.AdminSlides-deleteButton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: .6rem;
+    height: .1rem;
+
+    background-color: #202020;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.AdminSlides-deleteButton::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: .6rem;
+    height: .1rem;
+
+    background-color: #202020;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.AdminSlides-deleteButton:hover {
+    background-color: transparent;
+}
+.AdminSlides-deleteButton:hover::after,
+.AdminSlides-deleteButton:hover::before {
+    background-color: #fff;
+}
